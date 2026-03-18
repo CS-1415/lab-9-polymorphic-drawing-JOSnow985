@@ -38,21 +38,21 @@ public class CircleTests
         Assert.IsTrue(shape.ContainsPoint(8, 10));
     }
 
-    // [Test]
-    // public void ContainsAllFourPointsOfTheCompass()
-    // {
-    //     Assert.IsTrue(shape.ContainsPoint(8 - 2, 10));
-    //     Assert.IsTrue(shape.ContainsPoint(8 + 2, 10));
-    //     Assert.IsTrue(shape.ContainsPoint(8, 10 - 2));
-    //     Assert.IsTrue(shape.ContainsPoint(8, 10 + 2));
-    // }
+    [Test]
+    public void ContainsAllFourPointsOfTheCompass()
+    {
+        Assert.IsTrue(shape.ContainsPoint(8 - 2, 10));
+        Assert.IsTrue(shape.ContainsPoint(8 + 2, 10));
+        Assert.IsTrue(shape.ContainsPoint(8, 10 - 2));
+        Assert.IsTrue(shape.ContainsPoint(8, 10 + 2));
+    }
 
-    // [Test]
-    // public void ShouldNotContainFourCorners()
-    // {
-    //     Assert.IsFalse(shape.ContainsPoint(8 - 2, 10 - 2));
-    //     Assert.IsFalse(shape.ContainsPoint(8 + 2, 10 - 2));
-    //     Assert.IsFalse(shape.ContainsPoint(8 - 2, 10 + 2));
-    //     Assert.IsFalse(shape.ContainsPoint(8 + 2, 10 + 2));
-    // }
+    [Test]
+    public void ShouldNotContainFourCorners()
+    {
+        Assert.IsFalse(shape.ContainsPoint(8 - 2, 10 - 2));
+        Assert.IsFalse(shape.ContainsPoint(8 + 2, 10 - 2));
+        Assert.IsFalse(shape.ContainsPoint(8 - 2, 10 + 2));
+        Assert.IsFalse(shape.ContainsPoint(8 + 2, 10 + 2));
+    }
 }
