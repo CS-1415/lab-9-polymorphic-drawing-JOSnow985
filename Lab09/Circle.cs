@@ -18,6 +18,10 @@ public class Circle : AbstractGraphic2D
 
     public override bool ContainsPoint(decimal x, decimal y)
     {
-        return false;
+        decimal deltaX = x - CenterX;
+        decimal deltaY = y - CenterY;
+        decimal distanceToCenterSquared = (deltaX * deltaX) + (deltaY * deltaY);
+        decimal squaredRadius = Radius * Radius;
+        return distanceToCenterSquared <= squaredRadius;
     }
 }
