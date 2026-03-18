@@ -32,11 +32,11 @@ public class CircleTests
         Assert.AreEqual(10 + 2, shape.UpperBoundY);
     }
 
-    // [Test]
-    // public void CenterIsIncluded()
-    // {
-    //     Assert.IsTrue(shape.ContainsPoint(8, 10));
-    // }
+    [Test]
+    public void CenterIsIncluded()
+    {
+        Assert.IsTrue(shape.ContainsPoint(8, 10));
+    }
 
     // [Test]
     // public void ContainsAllFourPointsOfTheCompass()
