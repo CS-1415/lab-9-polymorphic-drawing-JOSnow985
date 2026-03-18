@@ -2,10 +2,10 @@
 
 public class Rectangle : AbstractGraphic2D
 {
-    public override decimal LowerBoundX => -1;
-    public override decimal UpperBoundX => -1;
-    public override decimal LowerBoundY => -1;
-    public override decimal UpperBoundY => -1;
+    public override decimal LowerBoundX => Left;
+    public override decimal UpperBoundX => Left + Width;
+    public override decimal LowerBoundY => Top;
+    public override decimal UpperBoundY => Top + Height;
     public decimal Left {get; private set;} = 0;
     public decimal Top {get; private set;} = 0;
     public decimal Width {get; private set;} = 1;
