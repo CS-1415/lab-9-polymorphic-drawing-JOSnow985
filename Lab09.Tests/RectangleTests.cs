@@ -2,24 +2,24 @@ namespace Lab09.Tests;
 
 public class RectangleTests
 {
-    // Rectangle rectangle;
-    // AbstractGraphic2D shape;
+    Rectangle rectangle;
+    AbstractGraphic2D shape;
 
-    // [SetUp]
-    // public void Setup()
-    // {
-    //     rectangle = new Rectangle(3, 4, 5, 6);
-    //     shape = rectangle;
-    // }
+    [SetUp]
+    public void Setup()
+    {
+        rectangle = new Rectangle(3, 4, 5, 6);
+        shape = rectangle;
+    }
 
-    // [Test]
-    // public void EnsurePropertiesAreCorrect()
-    // {
-    //     Assert.AreEqual(3, rectangle.Left);
-    //     Assert.AreEqual(4, rectangle.Top);
-    //     Assert.AreEqual(5, rectangle.Width);
-    //     Assert.AreEqual(6, rectangle.Height);
-    // }
+    [Test]
+    public void EnsurePropertiesAreCorrect()
+    {
+        Assert.AreEqual(3, rectangle.Left);
+        Assert.AreEqual(4, rectangle.Top);
+        Assert.AreEqual(5, rectangle.Width);
+        Assert.AreEqual(6, rectangle.Height);
+    }
 
     // [Test]
     // public void CheckLowerBounds()
