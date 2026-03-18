@@ -37,11 +37,11 @@ public class RectangleTests
         Assert.AreEqual(4 + 6, shape.UpperBoundY);
     }
 
-    // [Test]
-    // public void MiddleOfShapeIsIncluded()
-    // {
-    //     Assert.IsTrue(shape.ContainsPoint(5.5m, 7));
-    // }
+    [Test]
+    public void MiddleOfShapeIsIncluded()
+    {
+        Assert.IsTrue(shape.ContainsPoint(5.5m, 7));
+    }
 
     // [Test]
     // public void CornersIncluded()
