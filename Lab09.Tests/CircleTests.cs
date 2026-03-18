@@ -23,14 +23,14 @@ public class CircleTests
         Assert.AreEqual(2, circle.Radius);
     }
 
-    // [Test]
-    // public void HasCorrectBoundingBox()
-    // {
-    //     Assert.AreEqual(8 - 2, shape.LowerBoundX);
-    //     Assert.AreEqual(10 - 2, shape.LowerBoundY);
-    //     Assert.AreEqual(8 + 2, shape.UpperBoundX);
-    //     Assert.AreEqual(10 + 2, shape.UpperBoundY);
-    // }
+    [Test]
+    public void HasCorrectBoundingBox()
+    {
+        Assert.AreEqual(8 - 2, shape.LowerBoundX);
+        Assert.AreEqual(10 - 2, shape.LowerBoundY);
+        Assert.AreEqual(8 + 2, shape.UpperBoundX);
+        Assert.AreEqual(10 + 2, shape.UpperBoundY);
+    }
 
     // [Test]
     // public void CenterIsIncluded()
