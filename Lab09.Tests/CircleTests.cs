@@ -1,27 +1,27 @@
-namespace Lab0.Tests;
+namespace Lab09.Tests;
 
 public class CircleTests
 {
-    // Circle circle;
-    // AbstractGraphic2D shape;
+    Circle circle;
+    AbstractGraphic2D shape;
 
-    // [SetUp]
-    // public void Setup()
-    // {
-    //     // should be x, y, and radius
-    //     circle = new Circle(8, 10, 2);
+    [SetUp]
+    public void Setup()
+    {
+        // should be x, y, and radius
+        circle = new Circle(8, 10, 2);
 
-    //     // should extend the abstract class
-    //     shape = circle;
-    // }
+        // should extend the abstract class
+        shape = circle;
+    }
 
-    // [Test]
-    // public void CircleHasCorrectDimensions()
-    // {
-    //     Assert.AreEqual(8, circle.CenterX);
-    //     Assert.AreEqual(10, circle.CenterY);
-    //     Assert.AreEqual(2, circle.Radius);
-    // }
+    [Test]
+    public void CircleHasCorrectDimensions()
+    {
+        Assert.AreEqual(8, circle.CenterX);
+        Assert.AreEqual(10, circle.CenterY);
+        Assert.AreEqual(2, circle.Radius);
+    }
 
     // [Test]
     // public void HasCorrectBoundingBox()
