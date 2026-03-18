@@ -21,21 +21,21 @@ public class RectangleTests
         Assert.AreEqual(6, rectangle.Height);
     }
 
-    // [Test]
-    // public void CheckLowerBounds()
-    // {
-    //     // lower bound is the smallest x that needs to be checked when drawing the shape
-    //     Assert.AreEqual(3, shape.LowerBoundX);
-    //     Assert.AreEqual(4, shape.LowerBoundY);
-    // }
+    [Test]
+    public void CheckLowerBounds()
+    {
+        // lower bound is the smallest x that needs to be checked when drawing the shape
+        Assert.AreEqual(3, shape.LowerBoundX);
+        Assert.AreEqual(4, shape.LowerBoundY);
+    }
 
-    // [Test]
-    // public void CheckUpperBounds()
-    // {
-    //     // upper bound is the largest x that needs to be checked when drawing the shape
-    //     Assert.AreEqual(3 + 5, shape.UpperBoundX);
-    //     Assert.AreEqual(4 + 6, shape.UpperBoundY);
-    // }
+    [Test]
+    public void CheckUpperBounds()
+    {
+        // upper bound is the largest x that needs to be checked when drawing the shape
+        Assert.AreEqual(3 + 5, shape.UpperBoundX);
+        Assert.AreEqual(4 + 6, shape.UpperBoundY);
+    }
 
     // [Test]
     // public void MiddleOfShapeIsIncluded()
